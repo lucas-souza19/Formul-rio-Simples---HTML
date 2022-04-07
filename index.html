@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend class="fieldset_legend">Cadastro Geral</legend>
+            <nav>
+                <section class="bloco_perfil">
+                    <img src="./img/img_user.png" alt="Foto Perfil" id="img_user">
+                    <form>
+                        <div class="bloco_img_input">
+                            <label for="arquivo">Alterar Imagem</label>
+                            <input type="file" name="arquivo" id="arquivo">
+                        </div>
+                    </form>
+                </section>
+            </nav>
+            <form method="post">
+                <nav>
+                    <section class="bloco_dados">
+                        <fieldset class="bloco_dados_direita">
+                            <legend class="fieldset_legend">Dados Pessoais</legend>
+
+                            <div class="label-float">
+                                <input type="text" placeholder=" " required />
+                                <label>Nome Completo</label>
+                            </div>
+
+                            <div class="label-float">
+                                <input type="Date" placeholder=" " required />
+                                <label>Data de Nascimento</label>
+                            </div>
+
+                            <div class="concatena">
+                                <label class="profissao">Profissão:</label>
+                                <select name="profissao" id="profissao">
+                                    <option value="" selected>Autônomo</option>
+                                    <option value="">Professor</option>
+                                    <option value="">Desenvolvedor</option>
+                                    <option value="">Médico</option>
+                                    <option value="">Advogado</option>
+                                    <option value="">Outro</option>
+                                </select>
+                            </div>
+
+                        </fieldset>
+                        <fieldset class="bloco_dados_esquerda">
+                            <legend class="fieldset_legend">Acesso</legend>
+
+                            <div class="label-float">
+                                <input type="email" placeholder=" " required />
+                                <label>Email</label>
+                            </div>
+                            <div class="label-float">
+                                <input type="password" placeholder=" " required />
+                                <label>Senha</label>
+                            </div>
+                            <div class="label-float">
+                                <input type="text" placeholder=" " required />
+                                <label>Rua</label>
+                            </div>
+
+                        </fieldset>
+                    </section>
+                </nav>
+
+                <nav>
+                    <fieldset>
+                        <legend class="fieldset_legend">Faixa Etária</legend>
+                        <section class="bloco_fe">
+                            <div class="bloco_fe_esquerda">
+                                <div class="concatena">
+                                    <input type="radio" name="faixa_etaria" id="radio1" required>
+                                    <label for="radio1">até 20 anos</label>
+                                </div>
+                                <div class="concatena">
+                                    <input type="radio" name="faixa_etaria" id="radio2">
+                                    <label for="radio2">mais de 20 até 30 anos</label>
+                                </div>
+                                <div class="concatena">
+                                    <input type="radio" name="faixa_etaria" id="radio3">
+                                    <label for="radio3">mais de 30 até 40 anos</label>
+                                </div>
+                            </div>
+                            <div class="bloco_fe_direita">
+                                <div class="concatena">
+                                    <input type="radio" name="faixa_etaria" id="radio4">
+                                    <label for="radio4">mais de 40 até 50 anos</label>
+                                </div>
+                                <div class="concatena">
+                                    <input type="radio" name="faixa_etaria" id="radio5">
+                                    <label for="radio5">mais de 50 até 60 anos</label>
+                                </div>
+                                <div class="concatena">
+                                    <input type="radio" name="faixa_etaria" id="radio6">
+                                    <label for="radio6">mais de 60 anos</label>
+                                </div>
+                            </div>
+                        </section>
+                    </fieldset>
+                </nav>
+
+                <nav>
+                    <fieldset>
+                        <legend class="fieldset_legend">Esportes que pratica</legend>
+                        <section class="bloco bloco_esportes">
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox">Futebol de campo</label>
+                            </div>
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox">Futebol de salão</label>
+                            </div>
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox">Futebol society</label>
+                            </div>
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox4">
+                                <label for="checkbox">Vôlei de quadra</label>
+                            </div>
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox">Vôlei de praia</label>
+                            </div>
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox">Natação em piscina</label>
+                            </div>
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox7">
+                                <label for="checkbox">Natação em mar aberto</label>
+                            </div>
+                            <div class="concatena">
+                                <input type="checkbox" id="checkbox8" checked>
+                                <label for="checkbox">Outros</label>
+                            </div>
+                        </section>
+                    </fieldset>
+                </nav>
+                <nav>
+                    <fieldset>
+                        <legend class="fieldset_legend">Comentário</legend>
+                        <section class="bloco_comentario">
+                            <textarea type="text" id="comentario" rows="10" required> </textarea>
+                        </section>
+                    </fieldset>
+                </nav>
+            </fieldset>
+
+            <div class="bloco_buttons">
+                <button type="submit" class="button button_enviar">Enviar</button>
+                <button type="reset" class="button button_limpar">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
